@@ -1,0 +1,21 @@
+.col.mb-5.position-relative
+  = products.each do |product|
+    .card.h-100
+      = image_tag product.image
+      .card-body.p-4
+        .text-center
+
+    h5.fw-bolder
+      = product.name
+    .d-flex.justify-content-center.small.text-warning.mb-2
+      .bi-star-fill
+      .bi-star-fill
+      .bi-star-fill
+      .bi-star-fill
+      .bi-star-fill
+    = product.price
+.card-footer.p-4.pt-0.border-top-0.bg-transparent
+  .text-center
+    a.btn.btn-outline-dark.mt-auto[href="#"]
+      = product.action
+= link_to "product", product, class: "stretched-link"

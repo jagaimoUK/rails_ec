@@ -27,6 +27,7 @@ module Myapp
                        helper_specs: false,
                        routing_specs: false
       g.factory_bot false
+      g.template_engine = :slim
     end
     config.action_view.default_form_builder = 'ApplicationFormBuilder'
   end
